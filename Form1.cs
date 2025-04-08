@@ -32,5 +32,25 @@ namespace CWA_Expense_Tracking
             textBoxTotalPay.Text = "";
             textBoxSpace.Text = "";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private bool ValidateStringFields(string str)
+        {
+
+        }
+
+        private bool ValidateNumFields(int num)
+        {
+
+        }
+
+        private bool ValidateDateFields(DateTime date)
+        {
+
+        }
     }
 }
