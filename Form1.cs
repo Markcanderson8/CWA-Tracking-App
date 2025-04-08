@@ -38,19 +38,19 @@ namespace CWA_Expense_Tracking
 
         }
 
-        private bool ValidateStringFields(string str)
-        {
+        //private bool ValidateStringFields(string str)
+        //{
 
-        }
+        //}
 
-        private bool ValidateNumFields(int num)
-        {
+        //private bool ValidateNumFields(int num)
+        //{
 
-        }
+        //}
 
-        private bool ValidateDateFields(DateTime date)
-        {
+        //private bool ValidateDateFields(DateTime date)
+        //{
 
-        }
+        //}
     }
 }
