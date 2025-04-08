@@ -16,5 +16,21 @@ namespace CWA_Expense_Tracking
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBoxLoadNumber.Text = "";
+            textBoxDate.Text = "";
+            textBoxFrom.Text = "";
+            textBoxTo.Text = "";
+            textBoxLoadedMiles.Text = "";
+            textBoxEmptyMiles.Text = "";
+            textBoxDriver.Text = "";
+            textBoxTruck.Text = "";
+            textBoxPayRate.Text = "";
+            textBoxLoadRevenue.Text = "";
+            textBoxTotalPay.Text = "";
+            textBoxSpace.Text = "";
+        }
     }
 }

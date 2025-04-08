@@ -8,3 +8,13 @@ C:\Users\markc\source\repos\CWA Expense Tracking\obj\Debug\CWA Expense Tracking.
 C:\Users\markc\source\repos\CWA Expense Tracking\obj\Debug\CWA Expense Tracking.csproj.CoreCompileInputs.cache
 C:\Users\markc\source\repos\CWA Expense Tracking\obj\Debug\CWA Expense Tracking.exe
 C:\Users\markc\source\repos\CWA Expense Tracking\obj\Debug\CWA Expense Tracking.pdb
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\bin\Debug\CWA Expense Tracking.exe.config
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\bin\Debug\CWA Expense Tracking.exe
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\bin\Debug\CWA Expense Tracking.pdb
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA Expense Tracking.csproj.AssemblyReference.cache
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA_Expense_Tracking.Form1.resources
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA_Expense_Tracking.Properties.Resources.resources
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA Expense Tracking.csproj.GenerateResource.cache
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA Expense Tracking.csproj.CoreCompileInputs.cache
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA Expense Tracking.exe
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA Expense Tracking.pdb
