@@ -56,6 +56,7 @@
             this.textBoxDriver = new System.Windows.Forms.TextBox();
             this.submitButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
+            this.dateFormatLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -314,12 +315,24 @@
             this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
+            // dateFormatLabel
+            // 
+            this.dateFormatLabel.AutoSize = true;
+            this.dateFormatLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFormatLabel.ForeColor = System.Drawing.Color.Red;
+            this.dateFormatLabel.Location = new System.Drawing.Point(207, 200);
+            this.dateFormatLabel.Name = "dateFormatLabel";
+            this.dateFormatLabel.Size = new System.Drawing.Size(234, 16);
+            this.dateFormatLabel.TabIndex = 27;
+            this.dateFormatLabel.Text = "Date Must Be In Format MM/DD/YYYY";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(1160, 661);
+            this.Controls.Add(this.dateFormatLabel);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.label7);
@@ -351,6 +364,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Load Tracker";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,6 +399,7 @@
         private System.Windows.Forms.TextBox textBoxDriver;
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Label dateFormatLabel;
     }
 }
 

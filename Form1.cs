@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace CWA_Expense_Tracking
 {
@@ -17,6 +18,8 @@ namespace CWA_Expense_Tracking
         {
             InitializeComponent();
         }
+
+
 
         private void clearButton_Click(object sender, EventArgs e)
         {
@@ -36,8 +39,10 @@ namespace CWA_Expense_Tracking
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            var x = ValidateNumFields(textBoxLoadNumber.Text);
-            Console.WriteLine(x);
+            if(!ValidateDateFields(textBoxDate.Text))
+            {
+                dateFormatLabel.Visible = true;
+            }
         }
 
         private bool ValidateNumFields(string num)
@@ -47,9 +52,16 @@ namespace CWA_Expense_Tracking
             return x;
         }
 
-        //private bool ValidateDateFields(DateTime date)
-        //{
+        private bool ValidateDateFields(string date)
+        {
+            Regex regex = new Regex("\\d{1,2}\\/\\d{1,2}\\/\\d{2,4}");
+            var x = regex.IsMatch(date);
+            return x;
+        }
 
-        //}
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dateFormatLabel.Visible = false;
+        }
     }
 }
