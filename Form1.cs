@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +18,7 @@ namespace CWA_Expense_Tracking
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void clearButton_Click(object sender, EventArgs e)
         {
             textBoxLoadNumber.Text = "";
             textBoxDate.Text = "";
@@ -33,20 +34,20 @@ namespace CWA_Expense_Tracking
             textBoxSpace.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void submitButton_Click(object sender, EventArgs e)
         {
-
+            bool ans = ValidateNumFields(5);
+            Console.WriteLine(ans);
         }
 
-        //private bool ValidateStringFields(string str)
-        //{
-
-        //}
-
-        //private bool ValidateNumFields(int num)
-        //{
-
-        //}
+        private bool ValidateNumFields(int num)
+        {
+            string pattern = "\\d";
+            Regex regex = new Regex(pattern);
+            var x = regex.IsMatch(num.ToString());
+            Console.WriteLine(x);
+            return x;
+        }
 
         //private bool ValidateDateFields(DateTime date)
         //{
