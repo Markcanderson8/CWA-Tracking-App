@@ -54,8 +54,8 @@
             this.textBoxPayRate = new System.Windows.Forms.TextBox();
             this.textBoxTruck = new System.Windows.Forms.TextBox();
             this.textBoxDriver = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.submitButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -286,33 +286,33 @@
             this.textBoxDriver.Size = new System.Drawing.Size(252, 29);
             this.textBoxDriver.TabIndex = 13;
             // 
-            // button1
+            // submitButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Lavender;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(492, 470);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 40);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.submitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.submitButton.FlatAppearance.BorderColor = System.Drawing.Color.Lavender;
+            this.submitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.submitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.Location = new System.Drawing.Point(492, 470);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(100, 40);
+            this.submitButton.TabIndex = 25;
+            this.submitButton.Text = "Submit";
+            this.submitButton.UseVisualStyleBackColor = false;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
-            // button2
+            // clearButton
             // 
-            this.button2.BackColor = System.Drawing.Color.SlateGray;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Lavender;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(599, 470);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 40);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.clearButton.BackColor = System.Drawing.Color.SlateGray;
+            this.clearButton.FlatAppearance.BorderColor = System.Drawing.Color.Lavender;
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.Location = new System.Drawing.Point(599, 470);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(100, 40);
+            this.clearButton.TabIndex = 26;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = false;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // Form1
             // 
@@ -320,8 +320,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(1160, 661);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.submitButton);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -383,8 +383,8 @@
         private System.Windows.Forms.TextBox textBoxPayRate;
         private System.Windows.Forms.TextBox textBoxTruck;
         private System.Windows.Forms.TextBox textBoxDriver;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }
 
