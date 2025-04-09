@@ -36,16 +36,14 @@ namespace CWA_Expense_Tracking
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            bool ans = ValidateNumFields(5);
-            Console.WriteLine(ans);
+            var x = ValidateNumFields(textBoxLoadNumber.Text);
+            Console.WriteLine(x);
         }
 
-        private bool ValidateNumFields(int num)
+        private bool ValidateNumFields(string num)
         {
-            string pattern = "\\d";
-            Regex regex = new Regex(pattern);
-            var x = regex.IsMatch(num.ToString());
-            Console.WriteLine(x);
+            Regex regex = new Regex("^\\d+$");
+            var x = regex.IsMatch(num);
             return x;
         }
 
