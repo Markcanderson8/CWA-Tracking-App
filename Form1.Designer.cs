@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBoxLoadNumber = new System.Windows.Forms.TextBox();
             this.textBoxDate = new System.Windows.Forms.TextBox();
             this.textBoxFrom = new System.Windows.Forms.TextBox();
@@ -57,19 +56,8 @@
             this.submitButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.dateFormatLabel = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Lavender;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("MingLiU-ExtB", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(492, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 32);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Load Tracking";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxLoadNumber
             // 
@@ -326,12 +314,24 @@
             this.dateFormatLabel.TabIndex = 27;
             this.dateFormatLabel.Text = "Date Must Be In Format MM/DD/YYYY";
             // 
+            // label13
+            // 
+            this.label13.AllowDrop = true;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(492, 50);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(186, 31);
+            this.label13.TabIndex = 28;
+            this.label13.Text = "Load Tracking";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(1160, 661);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.dateFormatLabel);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.submitButton);
@@ -359,7 +359,6 @@
             this.Controls.Add(this.textBoxFrom);
             this.Controls.Add(this.textBoxDate);
             this.Controls.Add(this.textBoxLoadNumber);
-            this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -371,8 +370,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBoxLoadNumber;
         private System.Windows.Forms.TextBox textBoxDate;
         private System.Windows.Forms.TextBox textBoxFrom;
@@ -400,6 +397,7 @@
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Label dateFormatLabel;
+        private System.Windows.Forms.Label label13;
     }
 }
 

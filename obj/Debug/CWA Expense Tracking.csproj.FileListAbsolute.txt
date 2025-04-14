@@ -18,3 +18,4 @@ C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA Expense Tracking.
 C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA Expense Tracking.csproj.CoreCompileInputs.cache
 C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA Expense Tracking.exe
 C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA Expense Tracking.pdb
+C:\Users\markc\Documents\GitHub\CWA-Tracking-App\obj\Debug\CWA_Expense_Tracking.Form2.resources

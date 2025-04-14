@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +20,6 @@ namespace CWA_Expense_Tracking
             InitializeComponent();
         }
 
-
-
         private void clearButton_Click(object sender, EventArgs e)
         {
             textBoxLoadNumber.Text = "";
@@ -35,14 +34,21 @@ namespace CWA_Expense_Tracking
             textBoxLoadRevenue.Text = "";
             textBoxTotalPay.Text = "";
             textBoxSpace.Text = "";
+            dateFormatLabel.Visible = false;
         }
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            if(!ValidateDateFields(textBoxDate.Text))
+            if(!(textBoxLoadNumber.Equals("") || textBoxDate.Equals("") || textBoxFrom.Equals("") || textBoxTo.Equals("") || textBoxLoadedMiles.Equals("") || 
+                textBoxEmptyMiles.Equals("") || textBoxDriver.Equals("") || textBoxTruck.Equals("") || textBoxPayRate.Equals("") || textBoxLoadRevenue.Equals("") || 
+                textBoxTotalPay.Equals(""))) // textBoxSpace.Equals("")
             {
-                dateFormatLabel.Visible = true;
+                if (!ValidateDateFields(textBoxDate.Text))
+                    dateFormatLabel.Visible = true;
+                else
+                    dateFormatLabel.Visible = false;
             }
+            
         }
 
         private bool ValidateNumFields(string num)
@@ -62,6 +68,24 @@ namespace CWA_Expense_Tracking
         private void Form1_Load(object sender, EventArgs e)
         {
             dateFormatLabel.Visible = false;
+        }
+
+        private void ReadExcelSheet()
+        {
+            string filePath = "G:\\My Drive\\BUSINESS\\CWA\\P&L Statements\\2025\\Profit & Loss Book.xlsx";
+            Excel.Application ex = new Excel.Application();
+            Workbook wb;
+            Worksheet ws;
+
+            wb = ex.Workbooks.Open(filePath);
+            ws = wb.Worksheets[2];
+
+            MessageBox.Show(Convert.ToString(ws.Cells[40,6].Value)); // Set up as [row, column]
+
+            wb.Save();
+            wb.Close(true);
+            ex.Quit();
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(ex);
         }
     }
 }
